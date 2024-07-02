@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import RandomDice from "./components/Dice.js";
 
 function App() {
+  
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <RandomDice
+      images={[
+        "/images/dice1.png",
+        "/images/dice2.png",
+        "/images/dice3.png",
+        "/images/dice4.png",
+        "/images/dice5.png",
+        "/images/dice6.png",
+      ]}
+    />
   );
 }
 
